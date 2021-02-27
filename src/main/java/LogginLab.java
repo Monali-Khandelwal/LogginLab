@@ -1,3 +1,5 @@
+import com.sun.org.apache.xalan.internal.utils.XMLSecurityManager;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -32,6 +34,10 @@ public class LogginLab {
         return (this.threshold > limit);
     }
 
-    // Write a method called thresholdReached, returns true if argument 'limit' is over the threshold.
-    // Write a test for the method in the Test class.
+    public boolean thresholdReached(Integer limit) {
+            return (this.threshold > limit);
+    }
+
+        // Write a method called thresholdReached, returns true if argument 'limit' is over the threshold.
+        // Write a test for the method in the Test class.
 }
